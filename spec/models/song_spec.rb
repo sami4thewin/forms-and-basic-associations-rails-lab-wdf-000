@@ -21,6 +21,7 @@ RSpec.describe Song, type: :model do
     it 'sets the artist to the artist of the specified name' do
       song = Song.new
       song.artist_name = 'Rock Hudson'
+      # binding.pry
       expect(song.artist.name).to eq 'Rock Hudson'
     end
   end
@@ -29,6 +30,7 @@ RSpec.describe Song, type: :model do
     it 'returns the artist name' do
       song = Song.new
       song.artist_name = 'Rock Hudson'
+      # binding.pry
       expect(song.artist_name).to eq 'Rock Hudson'
     end
   end
